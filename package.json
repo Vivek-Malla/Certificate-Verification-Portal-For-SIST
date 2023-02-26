@@ -1,0 +1,28 @@
+{
+  "name": "clubs.sathyabama",
+  "version": "1.0.0",
+  "description": "This is a Clubs page for Sathyabama University where every student can ascess the clubs data and register for the events and pay the registration fee",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vivek-Malla/Clubs.Sathyabama.git"
+  },
+  "author": "Vivek Malla",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vivek-Malla/Clubs.Sathyabama/issues"
+  },
+  "homepage": "https://github.com/Vivek-Malla/Clubs.Sathyabama#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "nodemailer": "^6.8.0",
+    "nodemon": "^2.0.20",
+    "popups": "^1.1.3"
+  }
+}
