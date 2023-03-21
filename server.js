@@ -58,6 +58,9 @@ app.post("/student",function(req,res){
         res.send("Incorrect Pwd");
     }
 });
+app.get("/event",function(req,res){
+    res.sendFile(__dirname+"/eventadded.html")
+})
 app.post("/admin",function(req,res){
     var sname = req.body.user;
     var semail = req.body.mail;
@@ -100,14 +103,14 @@ let transporter = nodemailer.createTransport({
     from: 'vivekmalla123@gmail.com',
     to: emailq,
     subject: 'Verfication Successfully',
-    text: "Your Details are Verified"
+    text: "Your Details are Verified and dowload the certicate from the bellow Link : https://drive.google.com/file/d/1PHalYIN2bzl6oydFwwpGnsM7zslwDKG9/view?usp=sharing"
   })
     if(
-         title == 719725150925 &&
-         date == 25000 &&
-         des == "ODOPS1310A" &&
-         reg == "Vivek" &&
-         ddate == 'Hexatech'
+         title == "Vivek Malla" &&
+         date == 1234 &&
+         des == "1234" &&
+         reg == "satya" &&
+         ddate == 'satya'
     ){
         res.sendFile(__dirname+"/eventadded.html");
     }
